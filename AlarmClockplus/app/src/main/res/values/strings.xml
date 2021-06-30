@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alarm Clock++</string>
+    <string name="title_home">Home</string>
+    <string name="title_alarm">Alarm</string>
+    <string name="title_calendar">Calendar</string>
+
+<!--menu-->
+    <string name="alarm_ringtone">Alarm ringtone</string>
+</resources>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".ui.alarm.AlarmFragment">
+
+    <ScrollView
+       android:id="@+id/scrollView2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/layoutAlarm1"
+               android:layout_width="match_parent"
+               android:layout_height="135dp">
+
+                <Switch
+                   android:id="@+id/switchAlarm1"
+                   android:layout_width="65dp"
+                   android:layout_height="60dp"
+                   android:layout_marginEnd="4dp"
+                   android:padding="10dp"
+                   android:scaleX="1.2"
+                   android:scaleY="1.2"
+                   android:textAlignment="center"
+                   android:textOff=""
+                   android:textOn=""
+                   android:textSize="10sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.493" />
+
+                <Button
+                   android:id="@+id/buttonStartHour1"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginStart="12dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:21"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                   android:id="@+id/buttonEndHour1"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginEnd="16dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:34"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/switchAlarm1"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                   android:id="@+id/editTextNumberSignedOfAlarms1"
+                   android:layout_width="57dp"
+                   android:layout_height="49dp"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginEnd="9dp"
+                   android:background="@drawable/frame_theme"
+                   android:ems="10"
+                   android:fontFamily="@font/roboto"
+                   android:inputType="numberSigned"
+                   android:text="8"
+                   android:textAlignment="center"
+                   android:textColor="#CFCFCF"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/buttonEndHour1"
+                   app:layout_constraintStart_toEndOf="@+id/buttonStartHour1"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/layoutAlarm2"
+               android:layout_width="match_parent"
+               android:layout_height="135dp">
+
+                <Switch
+                   android:id="@+id/switchAlarm2"
+                   android:layout_width="65dp"
+                   android:layout_height="60dp"
+                   android:layout_marginEnd="4dp"
+                   android:padding="10dp"
+                   android:scaleX="1.2"
+                   android:scaleY="1.2"
+                   android:textAlignment="center"
+                   android:textOff=""
+                   android:textOn=""
+                   android:textSize="10sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.493" />
+
+                <Button
+                   android:id="@+id/buttonStartHour2"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginStart="12dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:21"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                   android:id="@+id/buttonEndHour2"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginEnd="16dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:34"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/switchAlarm2"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                   android:id="@+id/editTextNumberSignedOfAlarms2"
+                   android:layout_width="57dp"
+                   android:layout_height="49dp"
+                   android:layout_marginStart="9dp"
+                   android:background="@drawable/frame_theme"
+                   android:ems="10"
+                   android:fontFamily="@font/roboto"
+                   android:inputType="numberSigned"
+                   android:text="8"
+                   android:textAlignment="center"
+                   android:textColor="#CFCFCF"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/buttonEndHour2"
+                   app:layout_constraintHorizontal_bias="0.0"
+                   app:layout_constraintStart_toEndOf="@+id/buttonStartHour2"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/layoutAlarm3"
+               android:layout_width="match_parent"
+               android:layout_height="135dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.5"
+               app:layout_constraintStart_toStartOf="parent">
+
+                <Switch
+                   android:id="@+id/switchAlarm3"
+                   android:layout_width="65dp"
+                   android:layout_height="60dp"
+                   android:layout_marginEnd="4dp"
+                   android:padding="10dp"
+                   android:scaleX="1.2"
+                   android:scaleY="1.2"
+                   android:textAlignment="center"
+                   android:textOff=""
+                   android:textOn=""
+                   android:textSize="10sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.493" />
+
+                <Button
+                   android:id="@+id/buttonStartHour3"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginStart="12dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:21"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                   android:id="@+id/buttonEndHour3"
+                   style="@style/Widget.AppCompat.Button"
+                   android:layout_width="110dp"
+                   android:layout_height="55dp"
+                   android:layout_marginEnd="16dp"
+                   android:background="@drawable/buttons_theme"
+                   android:backgroundTint="@color/darkgrey"
+                   android:fontFamily="monospace"
+                   android:text="16:34"
+                   android:textAlignment="center"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   android:typeface="monospace"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/switchAlarm3"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                   android:id="@+id/editTextNumberSignedOfAlarms3"
+                   android:layout_width="57dp"
+                   android:layout_height="49dp"
+                   android:layout_marginStart="8dp"
+                   android:background="@drawable/frame_theme"
+                   android:ems="10"
+                   android:fontFamily="@font/roboto"
+                   android:inputType="numberSigned"
+                   android:text="8"
+                   android:textAlignment="center"
+                   android:textColor="#CFCFCF"
+                   android:textSize="22sp"
+                   android:textStyle="bold"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toStartOf="@+id/buttonEndHour3"
+                   app:layout_constraintHorizontal_bias="0.1"
+                   app:layout_constraintStart_toEndOf="@+id/buttonStartHour3"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+       android:id="@+id/frameLayoutTimePicker"
+       android:layout_width="335dp"
+       android:layout_height="270dp"
+       android:layout_marginBottom="80dp"
+       android:background="@drawable/frame_theme"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark"
+       app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/layoutTimePicker"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+            <Button
+               android:id="@+id/buttonAcceptPickedHour"
+               android:layout_width="55dp"
+               android:layout_height="54dp"
+               android:layout_marginStart="76dp"
+               android:layout_marginBottom="8dp"
+               android:background="@drawable/ic_baseline_check_circle_24"
+               android:foreground="@drawable/ic_baseline_check_circle_24"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+               android:id="@+id/buttonCancelPickedHour"
+               android:layout_width="56dp"
+               android:layout_height="53dp"
+               android:layout_marginStart="13dp"
+               android:layout_marginBottom="8dp"
+               android:background="@drawable/ic_baseline_cancel_24"
+               android:foreground="@drawable/ic_baseline_cancel_24"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.45"
+               app:layout_constraintStart_toEndOf="@+id/buttonAcceptPickedHour" />
+
+            <TimePicker
+               android:id="@+id/timePickerSpinner"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:timePickerMode="spinner"
+               app:layout_constraintBottom_toTopOf="@+id/buttonAcceptPickedHour"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

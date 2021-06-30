@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:clickable="true"
+   tools:context=".ui.home.HomeFragment">
+
+   <ProgressBar
+      android:id="@+id/progress_bar_seconds"
+      style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+      android:layout_width="268dp"
+      android:layout_height="175dp"
+      android:max="60"
+      android:progress="1"
+      app:layout_constraintBottom_toTopOf="@+id/text_date"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_clock"
+      app:layout_constraintVertical_bias="0.496" />
+
+   <TextView
+      android:id="@+id/text_clock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="120dp"
+      android:fontFamily="monospace"
+      android:text="12:48:30"
+      android:textSize="48sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+      android:id="@+id/text_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:fontFamily="monospace"
+      android:text="12.12.2012"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.501"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_clock" />
+
+   <Chronometer
+      android:id="@+id/chronometer"
+      android:layout_width="60dp"
+      android:layout_height="46dp"
+      android:alpha="0"
+      android:fontFamily="monospace"
+      android:textAlignment="center"
+      android:textSize="48sp"
+      android:textStyle="bold"
+      android:visibility="visible"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="2dp"
+      tools:layout_editor_absoluteY="4dp"
+      tools:visibility="visible" />
+
+   <Button
+      android:id="@+id/button_settings_view_toggle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="60dp"
+      android:background="@drawable/buttons_theme"
+      android:text="Settings"
+      android:textAlignment="center"
+      android:textColor="@color/lightgrey"
+      android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+      android:visibility="visible"
+      app:icon="@drawable/ic_baseline_settings_24"
+      app:iconTint="@color/lightgrey"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:visibility="visible" />
+
+   <FrameLayout
+      android:id="@+id/frameLayoutSettingsView"
+      android:layout_width="349dp"
+      android:layout_height="255dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="2dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:background="@drawable/frame_theme"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark"
+      android:visibility="gone"
+      app:layout_constraintBottom_toTopOf="@+id/button_settings_view_toggle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_date"
+      app:layout_constraintVertical_bias="0.88">
+
+      <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <Button
+               android:id="@+id/buttonChooseRingtone"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:background="@drawable/buttons_theme"
+               android:fontFamily="@font/roboto"
+               android:text="@string/alarm_ringtone"
+               android:textAlignment="textEnd"
+               android:textAllCaps="false"
+               android:textColor="@color/lightgrey"
+               android:textSize="18sp"
+               android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+               android:visibility="visible"
+               app:icon="@drawable/ic_baseline_music_note_24"
+               app:iconTint="@color/lightgrey"
+               tools:visibility="visible" />
+
+            <Switch
+               android:id="@+id/switchVibrateAlways"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:checked="true"
+               android:fontFamily="@font/roboto"
+               android:hapticFeedbackEnabled="true"
+               android:paddingHorizontal="15dp"
+               android:text="Vibrate always"
+               android:textAlignment="textStart"
+               android:textSize="18sp" />
+
+         </LinearLayout>
+      </ScrollView>
+
+   </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
